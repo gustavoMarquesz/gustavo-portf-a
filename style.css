@@ -10,7 +10,7 @@
 
 body{
     font-size: 100%;  /*Tamanho da letra */
-    background-image: linear-gradient(180deg, #6b3f60 0, #61345d 16.67%, #54295b 33.33%, #441f59 50%, #301657 66.67%, #141056 83.33%, #000d56 100%);  /* Degrade*/
+    background-image: radial-gradient(circle at 47.71% 45.09%, #60345d 0, #54295b 25%, #441f59 50%, #311657 75%, #151156 100%);
 }
 
 .cabecalho{
@@ -43,49 +43,64 @@ body{
 }
 
 .conteudo{
-    border-top: 0.5px solid #d7d7ea;
     border-bottom: 0.5px solid #d7d7ea;
+    border-top: 0.5px solid #d7d7ea;
+    margin-bottom: 48px;
+   
 }
 
 .informacoes{
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 30px;
+    justify-content: space-around;
+    justify-content: flex-start;
 
+}
+
+.informacoes-eu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    
 }
 
 .infomacaoUm{
     font-family: 'Roboto Mono', monospace;
     color:#d7d7ea;
+    
 }
 
 .informacaoDois{
     font-family: 'Dosis', sans-serif;
     color: #d7d7ea;
+    
 }
-
-.infomacaoTres{
-    font-family: 'Dosis', sans-serif;
-    color: #d7d7ea;
-
-}
-
-.minhaHisotira{
+.conteudoDois{
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 30px;
+    justify-content: space-around;
+    justify-content: flex-start;
 }
 
-.minhaHistoria-div{
-    font-family: 'Roboto Mono', monospace;
-    color: #d7d7ea;
-    padding: 30px;
-}
 
-.imagem{
+.minhaHistoria{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
 }
+
+.minhaHistoriaUm{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+}
+
+.minhaHistoriaDois{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+}
+
 

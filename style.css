@@ -15,9 +15,7 @@ body{
 
 .cabecalho{
     display: flex;  /*flexbox */
-    flex-direction: row;  /*Linha, ou coluna ou etc */
-    align-items: center;  /* alinhar os itens no centro*/
-    justify-content: space-around;
+    flex-direction: row-reverse;  /*Linha, ou coluna ou etc */
     padding: 30px;  /* O espaço entre a parte de cima com os itens */
 }
 
@@ -26,8 +24,68 @@ body{
     display: flex;  /*FlexBox, intruções de como usar no site */
     gap: 32px;  /*O espaçamento entre as palavras */
     color: #f8f8f8;  /*A cor da letra */
+    font-weight: 400;
+    flex-direction: row-reverse;
+}
+
+.item1{
+    color: #f8f8f8;  /*A cor da letra */
+
+}
+
+.item2{
+    color: #f8f8f8;  /*A cor da letra */
 }
 
 .item3{
-    color: aquamarine;
+    color: #f8f8f8;  /*A cor da letra */
+
 }
+
+.conteudo{
+    border-top: 0.5px solid #d7d7ea;
+    border-bottom: 0.5px solid #d7d7ea;
+}
+
+.informacoes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+
+}
+
+.infomacaoUm{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+}
+
+.informacaoDois{
+    font-family: 'Dosis', sans-serif;
+    color: #d7d7ea;
+}
+
+.infomacaoTres{
+    font-family: 'Dosis', sans-serif;
+    color: #d7d7ea;
+
+}
+
+.minhaHisotira{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.minhaHistoria-div{
+    font-family: 'Roboto Mono', monospace;
+    color: #d7d7ea;
+    padding: 30px;
+}
+
+.imagem{
+    display: flex;
+    align-items: flex-end;
+}
+

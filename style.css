@@ -63,18 +63,21 @@ body{
     flex-direction: column;
     gap: 25px;
     padding: 40px;
+    padding-right: 55%;
     
 }
 
 .infomacaoUm{
     font-family: 'Roboto Mono', monospace;
     color:#d7d7ea;
+   
     
 }
 
 .informacaoDois{
     font-family: 'Dosis', sans-serif;
     color: #d7d7ea;
+   
     
 }
 .conteudoDois{
@@ -102,5 +105,13 @@ body{
     font-family: 'Roboto Mono', monospace;
     color:#d7d7ea;
 }
-
+.img{
+    padding: 5%;
+    border-radius: 50%;
+    max-width:450px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
+                     fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
+    max-height:450px;
+    width: auto;
+    height: auto;
+}
 

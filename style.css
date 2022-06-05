@@ -53,8 +53,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-    justify-content: flex-start;
+    justify-content: center;
 
 }
 
@@ -63,7 +62,6 @@ body{
     flex-direction: column;
     gap: 25px;
     padding: 40px;
-    padding-right: 55%;
     
 }
 
@@ -113,5 +111,35 @@ body{
     max-height:450px;
     width: auto;
     height: auto;
+}
+
+.despedida{
+    display: flex;
+    flex-direction: row;  
+    padding: 30px;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #f8f8f8; 
+}
+
+.agradecimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contato{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: row;
+}
+.dio{
+    font-family: 'Roboto Mono', monospace;
+    width: 180px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ECD6C4;
 }
 

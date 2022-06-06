@@ -82,7 +82,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
     justify-content: flex-start;
 }
 
@@ -102,6 +101,10 @@ body{
 .minhaHistoriaDois{
     font-family: 'Roboto Mono', monospace;
     color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;
+    
 }
 .img{
     padding: 5%;
@@ -120,6 +123,7 @@ body{
     justify-content: center;
     font-family: 'Roboto Mono', monospace;
     color: #f8f8f8; 
+    border-top: 0.4px #d7d7ea solid;
 }
 
 .agradecimentos{
@@ -134,12 +138,181 @@ body{
     display: flex;
     flex-direction: row;
 }
-.dio{
+
+.mail{
+    color: #f8f8f8;  /*A cor da letra */
+
+}
+
+
+.experienciasUm{
+    color: #f8f8f8;  /*A cor da letra */
+
+}
+
+.minhasExperiencias{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.experiencias{
     font-family: 'Roboto Mono', monospace;
-    width: 180px;
-    height: 70px;
+    color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;
+}
+
+.experienciasDois{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;
+}
+
+.experienciasUm{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;
+}
+.experienciasTres{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;
+}
+.experienciasQuatro{
+    font-family: 'Roboto Mono', monospace;
+    color:#d7d7ea;
+    text-align: justify;
+    gap: 25px;
+    padding: 40px;   
+}
+
+.minhasHabilidades{
+    display: flex;
+    flex-direction: row;  
+    padding: 40px;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #f8f8f8;
+    gap: 40px; 
+    flex-wrap:  wrap;
+}
+.habilidades{
+    border-top:  0.5px solid #d7d7ea;
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color:#f8f8f8
+    
+}
+
+.botao1{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
     border-radius: 15px;
     border: none;
-    background-color: #ECD6C4;
+    
+}
+.botao2{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+   
+    
+}
+.botao3{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+  
+  
+}
+.botao4{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    
+}
+.botao5{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    
+}
+.botao6{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+   
+}
+.botao7{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+  
+}
+.botao8{
+    font-family: 'Roboto Mono', monospace;
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+  
+}
+.botao9{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+}
+.botoes{
+    font-family: 'Roboto Mono', monospace;  /*google fonts */
+    display: flex;  /*FlexBox, intruções de como usar no site */
+    gap: 32px;  /*O espaçamento entre as palavras */
+    color: #f8f8f8;  /*A cor da letra */
+    font-weight: 400;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.minhasHabilidadesDois{
+    display: flex;
+    flex-direction: row;  
+    padding: 40px;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #f8f8f8;
+    gap: 40px; 
+    flex-wrap:  wrap;
+}
+.habilidades2{
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color:#f8f8f8
 }
 

@@ -12,6 +12,9 @@ body{
     font-size: 100%;  /*Tamanho da letra */
     background-image: radial-gradient(circle at 47.71% 45.09%, #60345d 0, #54295b 25%, #441f59 50%, #311657 75%, #151156 100%);
 }
+.dark-mode{
+    background: black;
+}
 
 .cabecalho{
     display: flex;  /*flexbox */
@@ -214,6 +217,14 @@ body{
     color:#f8f8f8
     
 }
+#botao-dark{
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
 
 .botao1{
     font-family: 'Roboto Mono', monospace;
@@ -221,6 +232,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
     
 }
 .botao2{
@@ -229,6 +241,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
    
     
 }
@@ -238,6 +251,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
   
   
 }
@@ -247,6 +261,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
     
 }
 .botao5{
@@ -255,6 +270,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
     
 }
 .botao6{
@@ -263,6 +279,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
    
 }
 .botao7{
@@ -271,6 +288,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
   
 }
 .botao8{
@@ -279,6 +297,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
   
 }
 .botao9{
@@ -287,6 +306,7 @@ body{
     height: 35px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 .botoes{
     font-family: 'Roboto Mono', monospace;  /*google fonts */
@@ -297,6 +317,8 @@ body{
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: left;
+    cursor: pointer;
+    
 }
 .minhasHabilidadesDois{
     display: flex;
@@ -315,4 +337,40 @@ body{
     font-family: 'Roboto Mono', monospace;
     color:#f8f8f8
 }
+.front{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color:#f8f8f8
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color:#f8f8f8   
+}
 
+.dio{
+    font-family: 'Roboto Mono', monospace;
+    color:#f8f8f8   
+}
+
+@keyframes botaoAnimation{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover {
+    animation-name: botaoAnimation;
+    animation-duration: 0.5;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 100px 50px rgba(57, 42, 221, 0.5);
+}

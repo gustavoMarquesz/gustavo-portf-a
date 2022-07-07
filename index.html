@@ -2,13 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça minhas capacitações e me conheça">
     <title>Gustavo Marques</title>
 </head>
 
-<body>
+<body id="corpo">
+   
     <header class="cabecalho">
         <nav class="cabecalho-menu">
             <a class="item1" href="https://www.instagram.com/gustavo.marquesz/" target="_blank">Instagram</a>
@@ -21,11 +22,12 @@
     <main class="conteudo">
 
         <section class="informacoes">
-            <img src="git-image.png" class="img" alt="Gustavo Marques">
+            <img src="assets/icons/git-image.png" class="img" alt="Gustavo Marques">
 
             <div class="informacoes-eu">
                 <h1 class="infomacaoUm">Gustavo José Vieira de França Marques</h1>
-                <h3 class="informacaoDois"> - A seguir, conheça um pouco da minha trágetoria na ramo da programação</h3>
+                <h3 class="informacaoDois"> - Conheça um pouco dos meus projetos e história</h3>
+                <button id="botao-dark">Dark-Mode</button>
             </div>
 
             
@@ -35,11 +37,10 @@
             
                 <div class="minhaHistoria">
                     <h2 class="minhaHistoriaUm">From the start:</h2>
-                    <p class="minhaHistoriaDois">   Minha história vem desde 2016, quando tive meu primeiro contato com programação, último ano do ensino médio.
-                Pyton começou a estourar no youtube e vi um potêncial enorme para me ajudar e ganhar muito tempo nas atividades de mátematica e física, 
-                tudo isso para ganhar tempo na aula ou em tarefas de casa para ter mais tempo livre. <br> Pensei em seguir carreira, mas tudo foi interrompido, anos depois voltei estudando
-                java para desenvolver sites usando o framework SpringBoot, onde fiz pequenos projetos (disponiveis no GitHub) tive um pouco de contato com o Front mas não como estou tendo agora. 
-                <br> 4 anos após, desde aquela época, atualmente trabalho no turno da tarde como English Teacher e pelo turno da manhã uso para estudar Front/Back.</p>
+                    <p class="minhaHistoriaDois"> Aspirante em tecnologia desde o colegial, procurava maneiras de automatizar e realizar atividades de matemática e física mais rápido, pois o professor deixava livre 
+                        quem terminarva mais cedo, então conheci o mundo da programação pelo Python, assim resolvendo essas atividades num piscar de olhos  &#128513; 
+                         Infelizmente parei de estudar e segui outro caminho, mais resumidamente, English Teacher. Porém o estou retomando e atualmente estudando as duas ramificações do desenvolvimento (Back-end e Front-end) procurando novas experiências
+                        para crescer individualmente como indivíduo e dentro do ramo.</p>  
 
                 </div>
     </main>
@@ -48,22 +49,33 @@
 
     <section class="minhasExperiencias">
         <div class="experiencias">
-            <h2>My experiencies:</h2>
+            <h2>Experiencies:</h2>
             <p class="experienciasUm">
-                   .Em umas das minhas mais divertidas e importantes experiências e projetos, foi a Vai de Van, na época meu pai tinha uma van e eu o queria ajudar de alguma forma.
-                Foi ai que escrevi um programa simples em Python usando a interface TKinter para ele, onde o programa mostrava os principais destinos e um calculador por KM.
+                   .Em umas das minhas mais divertidas e importantes experiências e projetos, foi a Vai de Van, na época meu pai tinha uma van e eu queria ajudar de alguma forma.
+                Foi ai que escrevi um programa simples em Python, usando a interface TKinter para ele, onde o programa mostrava os principais destinos e um calculador por KM.
                 Enfim, era complicado porque não progredi o suficiente para fazer páginas web e de fato levar o conteúdo online para o cliente final, mas foi um bom projeto, pois senti que tentei o ajudar de alguma forma.
             </p>
 
             <p class="experienciasDois">
                    .Junto com mais dois amigos, estávamos criando criando um projeto FullStack, intitulado: CotinhaFriends (como nome temporário pois ainda estávamos aprimorando os nomes)
                    como linguagem de back-end, usamos JAVA com o FrameWork Springboot, como DataBase: Postgresql, em vez do Maven, escolhemos usar o Graddle, dockerizamos o projeto e implementamos o sawagger.
-                   Angular como front (pensamos em trocar mas não tivemos a oportunidade da decisão final) Diviemos as tarefas de cada membro pelo Trello, assim tinhamos controle de quem estava com a tarefa e o status de cada uma. 
-                por fim/ infelizmente o projeto não conseguiu ser conclúdo devido aos diferentes caminhos que tomamos durantes os dias/messes, porém estamos perto de estar alinhados e retomar o projeto.    
+                   Angular como front (pensamos em trocar mas não tivemos a oportunidade da decisão final) Dividimos as tarefas de cada membro pelo Trello, assim tinhamos controle de quem estava com a tarefa e o status de cada uma. 
+                   por fim/infelizmente o projeto não conseguiu ser conclúdo devido aos diferentes caminhos que tomamos durantes os dias/messes, porém estamos perto de estar alinhados e retomar o projeto.    
+                   <a href="https://github.com/EduardoHenrique18/cotinha/tree/feature/COT-04" target="_blank" class="dio">Clique e veja no GitHub</a>
+            </p>
+            <p class="experienciasUm">
+                . FlashLight é um projeto mobile, usando o frame-work React-native. Onde como o nome já fiz, liga a lanterna do celular ao balançar o mesmo. O projeto foi pensado e desenhado 
+                pela empresa AVANADE em seu boot-camp na plataforma DIO.
+                <a href="https://github.com/gustavoMarquesz/flashLightDio" target="_blank" class="dio">Clique e veja no GitHub</a> 
+            </p>
+
+            <p class="experienciasUm">
+                . Assim como o FlashLight, o pequeno projeto Contador, também foi um desafio proposto pela DIO/AVANADE. Onde o site tem o contatador, porém ele não pode passar de 10 e nem ter números negativos.
+                <a href="https://github.com/gustavoMarquesz/contador" target="_blank" class="dio">Clique e veja no GitHub</a> 
             </p>
 
             <p class="experienciasTres">
-                   .Em um projeto mais pessoal, criei o que eu chava na época de: Alice, basicamente consistia em um projeto mobile, com comandos escritos que faziam certos aplicavos abrirem, escrito em Python.
+                   .Em um projeto mais pessoal, criei o que eu chamava na época de: Alice, basicamente consistia em um projeto mobile, com comandos escritos que faziam certos aplicavos abrirem, escrito em Python.
                    por exemplo "abrir câmera" ativava um evento If e a camera do celular abria depois da voz feminina do google fala "abrindo câmera".
             </p>
 
@@ -76,31 +88,42 @@
     </section>
    </main2>
 
-   <h2 class="habilidades">Hard Skills:</h2>
+   <h2 class="habilidades">Skills:</h2>
+   <h3 class="front">Front-End:</h3>
 
    <main3 class="minhasHabilidades">
            <div>
                <nav class="botoes">
                    <button class="botao1">HTML5</button>
                    <button class="botao2">CSS</button>
-                   <button class="botao3">Angular</button>
                    <button class="botao4">ThymeLeaf</button>
-                   <button class="botao5">Python</button>
-                   <button class="botao6">Java</button>
-                   <button class="botao7">SpringBoot</button>
-                   <button class="botao8">SpringSecurity</button>
-                   <button class="botao9">Maven</button>
-                   <button class="botao9">Gradlle</button>
-                   <button class="botao9">JPA</button>
-                   <button class="botao9">MySQL</button>
-                   <button class="botao9">Postgresql</button>
+                   <button class="botao6">JavaScript</button>
+                   <button class="botao7">React-native</button>
+                   <button class="botao8">Noção em UX/UI</button>
                    <button class="botao9">GIT</button>
                </nav>
+               
            </div>
-       </section>
+       
    </main3>
 
-   <h2 class="habilidades2">Soft Skills:</h2>
+   <h3 class="back">Back-End:</h3>
+   <main5 class="minhasHabilidades">
+    <div>
+        <nav class="botoes">
+            <button class="botao1">java</button>
+            <button class="botao2">Maven</button>
+            <button class="botao4">Graddle</button>
+            <button class="botao6">SpringBoot</button>
+            <button class="botao7">Spring Security</button>
+            <button class="botao8">MYSQL server</button>
+            <button class="botao9">JPA</button>
+        </nav>
+        
+    </div>
+    </main5>
+
+   <h3 class="back">Extra-Skills:</h3>
 
    <main4 class="minhasHabilidadesDois">
        <div>
@@ -111,6 +134,7 @@
             <button class="botao4">Flexibilidade</button>
             <button class="botao5">Proatividade</button>
             <button class="botao6">Resiliência</button>
+            <button class="botao6">Autocrítica</button>
            </nav>
        </div>
    </main4>
@@ -122,13 +146,14 @@
                 <nav>
                     <a>Entre em contato comigo</a>
                     <a href="mailto:gustavo99a@hotmail.com" class="mail">Pelo email: gustavojosevieira@grad.fafire.br | pelas redes ou |</a>
-                    <a href="">Cúrriculo Dio</a>
+                    <a href="https://web.dio.me/users/gustavo99a?tab=profile-me" class="dio" target="_blank">Contato Dio</a>
+                    
                 </nav>
             </div>
         </section>
       
     </footer>
-    
-</body>
+    <script src="assets/js/scripts.js"></script>
 
+</body>
 </html>

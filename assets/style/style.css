@@ -1,39 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
-
 }
 
 body{
     font-size: 100%;  /*Tamanho da letra */
-    background-image: radial-gradient(circle at 47.71% 45.09%, #60345d 0, #54295b 25%, #441f59 50%, #311657 75%, #151156 100%);
+    background-image: linear-gradient(90deg, rgba(161,106,104,1) 6%, rgba(68,43,115,1) 67%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(161,106,104,1) 36%, rgba(68,43,115,1) 67%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+}
+h3{
+    font-family: 'Roboto Mono', monospace;  /*google fonts */
+    color: #f8f8f8;
+    gap: 15px;
+    padding: 20px;
+
 }
 .dark-mode{
-    background: black;
+    background: linear-gradient(90deg, rgba(43,41,43,1) 100%, rgba(0,0,0,1) 100%);;
+    font-size: 100%;  /*Tamanho da letra */
+    transition: 2s;
 }
 
 .cabecalho{
-    display: flex;  /*flexbox */
-    flex-direction: row-reverse;  /*Linha, ou coluna ou etc */
     padding: 30px;  /* O espaço entre a parte de cima com os itens */
 }
 
 .cabecalho-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
     font-family: 'Roboto Mono', monospace;  /*google fonts */
-    display: flex;  /*FlexBox, intruções de como usar no site */
-    gap: 32px;  /*O espaçamento entre as palavras */
-    color: #f8f8f8;  /*A cor da letra */
-    font-weight: 400;
-    flex-direction: row-reverse;
+    color: #f8f8f8;
+    gap: 15px;
+    padding: 20px;
+    left: 1815px;
+    transition: 1.5s;
+}
+.cabecalho-menu :hover{
+    transform: translate(-2px, -2px);
+    transition:  0.4s;
 }
 
-.item1{
-    color: #f8f8f8;  /*A cor da letra */
-
+.redes{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 40px;
 }
 
 .item2{
@@ -42,14 +64,15 @@ body{
 
 .item3{
     color: #f8f8f8;  /*A cor da letra */
-
+}
+.item4{
+    position: relative;
+    top: 5px;
 }
 
 .conteudo{
     border-bottom: 0.5px solid #d7d7ea;
-    border-top: 0.5px solid #d7d7ea;
     margin-bottom: 48px;
-   
 }
 
 .informacoes{
@@ -69,11 +92,50 @@ body{
 }
 
 .infomacaoUm{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
     color:#d7d7ea;
-   
-    
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: #d7d7ea 2px solid;
+    margin: auto;
+    padding: 1%;
 }
+.typingAnimation{
+    animation: typing 4s 1s normal, blink 2200ms infinite normal;
+}
+
+@keyframes typing{
+    from{
+        width:0;;
+    }
+    to{
+        width: 37rem;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right-color: #d7d7ea;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes changeColor {
+
+    from{
+        color: #d7d7ea;
+    }
+    to{
+        color: green;
+    } 
+}
+.change-color{
+    animation: changeColor 5200ms infinite normal;
+}
+
 
 .informacaoDois{
     font-family: 'Dosis', sans-serif;
@@ -84,7 +146,6 @@ body{
 .conteudoDois{
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: flex-start;
 }
 
@@ -107,39 +168,94 @@ body{
     text-align: justify;
     gap: 25px;
     padding: 40px;
-    
 }
 .img{
     padding: 5%;
-    border-radius: 50%;
-    max-width:450px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
+    max-width: 300px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
                      fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
-    max-height:450px;
-    width: auto;
-    height: auto;
+    max-height:300px;
+    min-width: 300px;
+    border-radius: 50%;
+    
 }
 
 .despedida{
     display: flex;
-    flex-direction: row;  
     padding: 30px;
     justify-content: center;
     font-family: 'Roboto Mono', monospace;
     color: #f8f8f8; 
-    border-top: 0.4px #d7d7ea solid;
+    flex-wrap: wrap;
 }
 
 .agradecimentos{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
+    gap:20px;
+    padding: 20px;
+    
 }
 
-.contato{
-    font-family: 'Roboto Mono', monospace;
+.forms{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column; 
+    background-color: rgba(0, 0, 0, 0.10);
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    width: 700px;
+    height: 600px;
+    padding: 2%;
+    left: 33%;
+    position: relative;
+    gap: 15px;
+    border-radius: 15px;
+    top: 30px;
+    transition: 0.5s;
+}
+.forms:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.forms h1{
+    font-size: 40px;
+}
+.f-h3{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-left: 2px solid;
+}
+
+.forms div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 350px;
+    top: 45px;
+    position: relative;
+
+}
+
+.forms input{
+    height: 30px;
+    width: 200px;
+    padding: 2%;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.forms input:hover{
+    width: 210px;
+}
+
+.forms textarea{
+    padding: 1%;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .mail{
@@ -147,22 +263,37 @@ body{
 
 }
 
-
 .experienciasUm{
     color: #f8f8f8;  /*A cor da letra */
 
 }
 
 .minhasExperiencias{
+    padding: 5%;
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: flex-start;
+    gap: 50px;
+    flex-direction: row;
+    
+}
+.minhasExperiencias :hover{
+    animation-name: botaoAnimation;
+    box-shadow: 0 0 5em rgba(57, 42, 221, 0.5);
+    transition: 1.0s;
+}
+.img-project{
+    padding: 5%;
+    width: 550px;
+    height: 315px;
+    border-radius: 2%;
 }
 
-.experiencias{
+#writeProjects{
+    display: none;
+}
+
+.showProjects{
     font-family: 'Roboto Mono', monospace;
-    color:#d7d7ea;
     text-align: justify;
     gap: 25px;
     padding: 40px;
@@ -219,21 +350,91 @@ body{
 }
 #botao-dark{
     font-family: 'Roboto Mono', monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    right: 5px;
+    position: relative;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.descricao{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 400px;
+    height: 40px;
+    padding: 2%;
+    position: relative;
+    border-radius: 580px;
+    cursor: pointer;
+    left: 760px;
+    bottom: 430px;
+    clip-path: circle(6% at 90% 20%);
+    transition: 1s;
+}
+.descricao:hover{
+    clip-path: circle(100%);
+}
+.descricao:hover span{
+    opacity: 0;
+}
+.info{
+    float: right;
+    bottom: 25px;
+    margin-right: 5px;
+    position: relative;
+    transition: opacity 0.4s;
+}
+.descricao2{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 400px;
+    height: 40px;
+    padding: 2%;
+    position: relative;
+    border-radius: 580px;
+    cursor: pointer;
+    left: 160px;
+    bottom: 530px;
+    clip-path: circle(6% at 90% 20%);
+    transition: 1s;
+}
+.descricao2:hover{
+    clip-path: circle(100%);
+}
+.descricao2:hover span{
+    opacity: 0;
+}
+#hide-btn{
+    font-family: 'Roboto Mono', monospace;
     width: 100px;
-    height: 35px;
+    height: 45px;
+    font-size: 30px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
 }
-
-.botao1{
+#show-btn{
     font-family: 'Roboto Mono', monospace;
     width: 100px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.botao1{
+    font-family: 'Roboto Mono', monospace;
+    width: 150px;
     height: 35px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    
 }
 .botao2{
     font-family: 'Roboto Mono', monospace;
@@ -370,7 +571,66 @@ body{
 button:hover {
     animation-name: botaoAnimation;
     animation-duration: 0.5;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: 0 0 100px 50px rgba(57, 42, 221, 0.5);
+    box-shadow: 0 0 25px 30px rgba(57, 42, 221, 0.5);
+    transition: 1.0s;
+}
+
+@media screen and (max-width: 375px) {
+    .informacoes-eu h1{
+        font-size: 14px;
+    }
+
+    .informacoes-eu h3{
+        font-size: 14px;
+    }
+    .informacoes-eu button{
+        width: 12px;
+        height: 17px;
+    }
+    .informacoes img{
+        max-width:50px; 
+        max-height:50px;
+    }
+    .informacoes{
+        flex-direction: column;
+        font-size: 8px;
+    }
+
+    .cabecalho-menu a{
+        font-size: 8px;
+    }
+    .experiencias p{
+        font-size: 10px;
+    }
+    .experiencias h2{
+        font-size: 20px;
+    }
+    .minhaHistoria p{
+        font-size: 10px;
+    }
+
+    .minhaHistoria h2{
+        font-size: 20px;
+    }
+    #corpo h2{
+        font-size: 20px;
+    }
+    .botoes button{
+        width: 120px;
+        height: 17px;
+    }
+
+    .cabecalho-menu button{
+        width: 100px;
+        height: 17px;
+    }
+    .agradecimentos a{
+        font-size: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+       
+    }
 }

@@ -4,94 +4,119 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="description" content="Conheça minhas capacitações e me conheça">
     <title>Gustavo Marques</title>
 </head>
 
 <body id="corpo">
-   
-    <header class="cabecalho">
+    <header class="cabecalho" data-aos="fade-bottom">
         <nav class="cabecalho-menu">
-            <a class="item1" href="https://www.instagram.com/gustavo.marquesz/" target="_blank">Instagram</a>
-            <a class="item2" href="https://www.linkedin.com/in/gustavo-marques-818048205/" target="_blank">Linkedin</a>
-            <a class="item3" href="https://github.com/gustavoMarquesz" target="_blank">GitHub</a>
-            <a class="item4">Conheça-me nas redes: </a>
+            <a class="item1" href="https://www.instagram.com/gustavo.marquesz/" target="_blank"><img src="assets/icons/instagram.png" class="redes"></a>
+            <a class="item2" href="https://www.linkedin.com/in/gustavo-marques-818048205/" target="_blank"><img src="assets/icons/in.webp" class="redes"></a>
+            <a class="item3" href="https://github.com/gustavoMarquesz" target="_blank"><img src="assets/icons/github.jpg" class="redes"></a>
+            <button id="botao-dark">💡</button>
         </nav>
     </header>
 
     <main class="conteudo">
-
         <section class="informacoes">
-            <img src="assets/icons/git-image.png" class="img" alt="Gustavo Marques">
+            <img src="assets/icons/profilmeTrue.jpeg" class="img" alt="Gustavo Marques">
 
             <div class="informacoes-eu">
-                <h1 class="infomacaoUm">Gustavo José Vieira de França Marques</h1>
-                <h3 class="informacaoDois"> - Conheça um pouco dos meus projetos e minha história</h3>
-                <button id="botao-dark">Dark-Mode</button>
+                <h1 class="infomacaoUm typingAnimation" data-aos="fade-lef">Hello there, Gustavo Marques aqui</h1>
+                <h4 class="informacaoDois"data-aos="fade-right"> Professor de inglês em plena mudança na área de atuação profissional. 
+                    Graduando em Análise e Desenvolvimento de Sistemas, possuo foco e interesse no Front-end, criando e estilizando páginas web de alto nível com JavaScript, HMTL5 e CSS. Após dominar estas tecnologias, pretendo começar a dar um foco em frameworks, como React-native para projetos android. 
+                    Me considero uma pessoa insistente e consistente em aprender novos recursos e linguagens, me adaptando para superar qualquer desafio.
+                 </h4>
             </div>
-
-            
         </section>
 
-        <section class="conteudoDois">
-            
+        <section class="conteudoDois" data-aos="fade-top">    
                 <div class="minhaHistoria">
-                    <h2 class="minhaHistoriaUm">From the start:</h2>
+                    <h3 class="minhaHistoriaUm"> From the start</h3>
                     <p class="minhaHistoriaDois"> Aspirante em tecnologia desde o colegial, procurava maneiras de automatizar e realizar atividades de matemática e física mais rápido, pois o professor deixava livre 
                         quem terminava mais cedo, então conheci o mundo da programação pelo Python, assim resolvendo essas atividades num piscar de olhos  &#128513; 
-                         Infelizmente parei de estudar e segui outro caminho, mais resumidamente, English Teacher. Porém o estou retomando e atualmente estudando as duas ramificações do desenvolvimento (Back-end e Front-end) procurando novas experiências
+                         Infelizmente parei de estudar e segui outro caminho, mais resumidamente, English Teacher. Porém o estou retomando e atualmente estudando e procurando novas experiências
                         para crescer como indivíduo e dentro do ramo.
-                    </p>  
+                    </p> 
                 </div>
+        
+        </section>
     </main>
 
    <main2 class="conteudoTres">
-
-    <section class="minhasExperiencias">
-        <div class="experiencias">
-            <h2>Experiencies:</h2>
-            <p class="experienciasUm">
-                   .Em umas das minhas mais divertidas e importantes experiências e projetos, foi a Vai de Van, na época meu pai tinha uma van e eu queria ajudar de alguma forma.
-                Foi ai que escrevi um programa simples em Python, usando a interface TKinter para ele, onde o programa mostrava os principais destinos e um calculador por KM.
-                Enfim, era complicado porque não progredi o suficiente para fazer páginas web e de fato levar o conteúdo online para o cliente final, mas foi um bom projeto, pois senti que tentei ajudá-lo de alguma forma.
-            </p>
-
-            <p class="experienciasDois">
-                   .Junto com mais dois amigos, estávamos criando criando um projeto FullStack, intitulado: CotinhaFriends (como nome temporário pois ainda estávamos aprimorando os nomes)
-                   como linguagem de back-end, usamos JAVA com o FrameWork Springboot, como DataBase: Postgresql, em vez do Maven, escolhemos usar o Graddle, dockerizamos o projeto e implementamos o sawagger.
-                   Angular como front (pensamos em trocar mas não tivemos a oportunidade da decisão final) Dividimos as tarefas de cada membro pelo Trello, assim tinhamos controle de quem estava com a tarefa e o status de cada uma. 
-                   por fim/infelizmente o projeto não conseguiu ser conclúdo devido aos diferentes caminhos que tomamos durantes os dias e messes, porém estamos perto de estar alinhados e retomar o projeto.    
-                   <a href="https://github.com/EduardoHenrique18/cotinha/tree/feature/COT-04" target="_blank" class="dio">Clique e veja no GitHub</a>
-            </p>
-            <p class="experienciasUm">
-                . FlashLight é um projeto mobile, usando o frame-work React-native. No qual, como o nome ja supõe, liga a lanterna do celular ao balançar o mesmo. O projeto foi pensado e desenhado 
-                pela empresa AVANADE em seu boot-camp na plataforma DIO.
-                <a href="https://github.com/gustavoMarquesz/flashLightDio" target="_blank" class="dio">Clique e veja no GitHub</a> 
-            </p>
-
-            <p class="experienciasUm">
-                . Assim como o FlashLight, o pequeno projeto Contador, também foi um desafio proposto pela DIO/AVANADE. Onde o site tem o contatador, porém ele não pode passar de 10 e nem ter números negativos.
-                <a href="https://github.com/gustavoMarquesz/contador" target="_blank" class="dio">Clique e veja no GitHub</a> 
-            </p>
-
-            <p class="experienciasTres">
-                   .Em um projeto mais pessoal, criei o que eu chamava na época de Alice, basicamente consistia em um projeto mobile, com comandos escritos que faziam certos aplicavos abrirem, escrito em Python.
-                   por exemplo "abrir câmera" ativava um evento If e a camera do celular abria depois da voz feminina do google fala "abrindo câmera".
-            </p>
-
-            <p class="experienciasQuatro">
-                .Para estudar <b>Front-End</b> comecei a replicando o back do App de cotinha que já abordamos aqui, e assim então começar a fazer ele se comunicar com o front, que eu estava 
-                utulizando o ThymeLeaf com HTML + CSS, com alguns scripts em Js já pré-configurados. 
-            </p>
-            
+    <section>
+        <h3 data-aos="fade-top"> < Projects > </h3>
+        <div class="minhasExperiencias"  data-aos="fade-top">
+            <a href="https://g-contador.netlify.app" target="_blank"><img src="assets/icons/contador.jpeg" class="img-project"></a>
+            <a href="https://galhoseco.netlify.app" target="_blank"><img src="assets/icons/galho-seco.jpeg" class="img-project"></a>
         </div>
+
+        <div class="descricao">
+            <span class="info">i</span>
+            <p>Lading page feita exclusivamente para o Ateliê Galho Seco</p>
+        </div>
+
+        <div class="descricao2">
+            <span class="info">i</span>
+            <p>Proposto como desafio no Decola-Tech BootCamp, a página web se comporta como um contador. </p>
+        </div>
+        
+        <div class="projects" data-aos="fade-top">
+            <button  id="show-btn">⬇</button>
+        </div>
+
+        <div data-aos="fade-right">
+            <div id="writeProjects">
+                <p class="experienciasUm" data-aos="fade-right">
+                    .Em umas das minhas mais divertidas e importantes experiências e projetos, foi a Vai de Van, na época meu pai tinha uma van e eu queria ajudar de alguma forma.
+                 Foi ai que escrevi um programa simples em Python, usando a interface TKinter para ele, onde o programa mostrava os principais destinos e um calculador por KM.
+                 Enfim, era complicado porque não progredi o suficiente para fazer páginas web e de fato levar o conteúdo online para o cliente final, mas foi um bom projeto, pois senti que tentei ajudá-lo de alguma forma.
+             </p>
+    
+             <p class="experienciasDois" data-aos="fade-right">
+                    .Junto com mais dois amigos, estávamos criando criando um projeto FullStack, intitulado: CotinhaFriends (como nome temporário pois ainda estávamos aprimorando os nomes)
+                    como linguagem de back-end, usamos JAVA com o FrameWork Springboot, como DataBase: Postgresql, em vez do Maven, escolhemos usar o Graddle, dockerizamos o projeto e implementamos o sawagger.
+                    Angular como front (pensamos em trocar mas não tivemos a oportunidade da decisão final) Dividimos as tarefas de cada membro pelo Trello, assim tinhamos controle de quem estava com a tarefa e o status de cada uma. 
+                    por fim/infelizmente o projeto não conseguiu ser conclúdo devido aos diferentes caminhos que tomamos durantes os dias e messes, porém estamos perto de estar alinhados e retomar o projeto.    
+                    <a href="https://github.com/EduardoHenrique18/cotinha/tree/feature/COT-04" target="_blank" class="dio"><img src="assets/icons/github.jpg" class="redes"></a>
+             </p>
+             <p class="experienciasUm" data-aos="fade-right">
+                 . FlashLight é um projeto mobile, usando o frame-work React-native. No qual, como o nome ja supõe, liga a lanterna do celular ao balançar o mesmo. O projeto foi pensado e desenhado 
+                 pela empresa AVANADE em seu boot-camp na plataforma DIO.
+                 <a href="https://github.com/gustavoMarquesz/flashLightDio" target="_blank" class="dio"><img src="assets/icons/github.jpg" class="redes"></a> 
+             </p>
+    
+             <p class="experienciasUm" data-aos="fade-right">
+                 . Assim como o FlashLight, o pequeno projeto Contador, também foi um desafio proposto pela DIO/AVANADE. Onde o site tem o contatador, porém ele não pode passar de 10 e nem ter números negativos.
+                 <a href="https://github.com/gustavoMarquesz/contador" target="_blank" class="dio"><img src="assets/icons/github.jpg" class="redes"></a> 
+             </p>
+    
+             <p class="experienciasTres" data-aos="fade-right">
+                    .Em um projeto mais pessoal, criei o que eu chamava na época de Alice, basicamente consistia em um projeto mobile, com comandos escritos que faziam certos aplicavos abrirem, escrito em Python.
+                    por exemplo "abrir câmera" ativava um evento If e a camera do celular abria depois da voz feminina do google fala "abrindo câmera".
+             </p>
+    
+             <p class="experienciasQuatro" data-aos="fade-right">
+                 .Para estudar <b>Front-End</b> comecei a replicando o back do App de cotinha que já abordamos aqui, e assim então começar a fazer ele se comunicar com o front, que eu estava 
+                 utulizando o ThymeLeaf com HTML + CSS, com alguns scripts em Js já pré-configurados. 
+             </p>
+             <div class="projects" data-aos="fade-top">
+                <button  id="hide-btn">⬆</button>
+            </div>
+            </div>
+        </div>
+    
+        <h3 class="conteudoDois"> < / Projects > </h3>
     </section>
+
    </main2>
 
-   <h2 class="habilidades">Skills:</h2>
-   <h3 class="front">Front-End:</h3>
+   <h2 class="habilidades" data-aos="fade-top">Skills:</h2>
+   <h3 class="front" data-aos="fade-top">Front-End:</h3>
 
-   <main3 class="minhasHabilidades">
+   <main3 class="minhasHabilidades" data-aos="fade-top">
            <div>
                <nav class="botoes">
                    <button class="botao1">HTML5</button>
@@ -102,13 +127,11 @@
                    <button class="botao8">Noção em UX/UI</button>
                    <button class="botao9">GIT</button>
                </nav>
-               
            </div>
-       
    </main3>
 
-   <h3 class="back">Back-End:</h3>
-   <main5 class="minhasHabilidades">
+   <h3 class="back" data-aos="fade-top">Back-End:</h3>
+   <main5 class="minhasHabilidades" data-aos="fade-top">
     <div>
         <nav class="botoes">
             <button class="botao1">java</button>
@@ -123,9 +146,8 @@
     </div>
     </main5>
 
-   <h3 class="back">Extra-Skills:</h3>
-
-   <main4 class="minhasHabilidadesDois">
+   <h3 class="back" data-aos="fade-top">Extra-Skills:</h3>
+   <main4 class="minhasHabilidadesDois" data-aos="fade-top">
        <div>
            <nav class="botoes">
             <button class="botao1">Advanced English</button>
@@ -139,21 +161,52 @@
        </div>
    </main4>
 
-    <footer class="despedida">
+    <section data-aos="fade-top">
+        <form class="forms" action="https://api.staticforms.xyz/submit" method="post">
 
-        <section class="agradecimentos">
+            <input type="hidden" name="accessKey" value="4440f7f8-d27e-46e7-844c-3c4a98e4513e">
+            <input type="hidden" name="redirectTo" value="file:///C:/Users/Valeria/Desktop/portfolio/index.html?s"> 
+    
+            <h1 class="emailEmoji">📧☕</h1>
+            <h3 class="f-h3">Vamos tomar um café e começar um bate-papo.<br>Indicações, dúvidas, feedback, projetos...
+                <strong class="change-color"><br>fala comigo!</strong></h3>
             <div>
-                <nav>
-                    <a>Entre em contato comigo</a>
-                    <a href="mailto:gustavo99a@hotmail.com" class="mail">Pelo email: gustavojosevieira@grad.fafire.br | pelas redes ou |</a>
-                    <a href="https://web.dio.me/users/gustavo99a?tab=profile-me" class="dio" target="_blank">Contato Dio</a>
-                    
-                </nav>
+                <input name="name" placeholder="Nome" type="text" required maxlength="40" minlength="3">
             </div>
+
+            <div>
+                <input name="email" placeholder="E-mail" type="email" required maxlength="40">
+            </div>
+
+            <div>
+                <input name="subject" placeholder="Assunto" type="text" maxlength="25">
+            </div>
+
+            <div>
+                <textarea name="message" placeholder="Sua mensagem" required maxlength="300"></textarea>
+            </div>
+
+            <div>
+                <button class="botao3" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="despedida">
+        <section class="agradecimentos">
+            <nav>
+                <a href="mailto:gustavo99a@hotmail.com" class="mail">Ou entre em contato diretamente: gustavo99a@hotmail.com</a>
+            </nav>
         </section>
-      
     </footer>
+    
     <script src="assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 2500,
+        });
+    </script>
 
 </body>
 </html>

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="assets/icons/icon-cofe.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça minhas capacitações e me conheça">
     <title>Gustavo Marques</title>
 </head>
@@ -26,7 +27,7 @@
             <div class="informacoes-eu">
                 <h1 class="infomacaoUm typingAnimation" data-aos="fade-lef">Hello there, Gustavo Marques aqui</h1>
                 <h4 class="informacaoDois"data-aos="fade-right"> Professor de inglês em plena mudança na área de atuação profissional. 
-                    Graduando em Análise e Desenvolvimento de Sistemas, possuo foco e interesse no Front-end, criando e estilizando páginas web de alto nível com JavaScript, HMTL5 e CSS. Após dominar estas tecnologias, pretendo começar a dar um foco em frameworks, como React-native para projetos android. 
+                    Graduando em Análise e Desenvolvimento de Sistemas, possuo foco e interesse no Front-end, criando e estilizando páginas web de alto nível com JavaScript, HMTL e CSS. Após dominar estas tecnologias, pretendo começar a dar um foco em frameworks, como React. 
                     Me considero uma pessoa insistente e consistente em aprender novos recursos e linguagens, me adaptando para superar qualquer desafio.
                  </h4>
             </div>
@@ -36,7 +37,7 @@
                 <div class="minhaHistoria">
                     <h3 class="minhaHistoriaUm"> From the start</h3>
                     <p class="minhaHistoriaDois"> Aspirante em tecnologia desde o colegial, procurava maneiras de automatizar e realizar atividades de matemática e física mais rápido, pois o professor deixava livre 
-                        quem terminava mais cedo, então conheci o mundo da programação pelo Python, assim resolvendo essas atividades num piscar de olhos  &#128513; 
+                        quem terminava mais cedo, então conheci o mundo da programação pelo Python, assim resolvendo essas atividades num piscar de olhos <i class="fa-solid fa-face-laugh-squint"></i> 
                          Infelizmente parei de estudar e segui outro caminho, mais resumidamente, English Teacher. Porém o estou retomando e atualmente estudando e procurando novas experiências
                         para crescer como indivíduo e dentro do ramo.
                     </p> 
@@ -46,25 +47,37 @@
     </main>
 
    <main2 class="conteudoTres">
-    <section>
-        <h3 data-aos="fade-top"> < Projects > </h3>
-        <div class="minhasExperiencias"  data-aos="fade-top">
-            <a href="https://g-contador.netlify.app" target="_blank"><img src="assets/icons/contador.jpeg" class="img-project"></a>
-            <a href="https://galhoseco.netlify.app" target="_blank"><img src="assets/icons/galho-seco.jpeg" class="img-project"></a>
-        </div>
+    <h3 data-aos="fade-top"> < Projects > </h3>
+    <section class="projetinhos">
+        <div class="imagesContent">
+            <div class="slides">
+                <input type="radio" name="radio" id="slide1" checked>
+                <input type="radio" name="radio" id="slide2">
+                <input type="radio" name="radio" id="slide3">
 
-        <div class="descricao">
-            <span class="info">i</span>
-            <p>Lading page feita exclusivamente para o Ateliê Galho Seco</p>
-        </div>
+                <div class="slide s1">
+                    <a href="https://galhoseco.netlify.app" target="_blank"><img src="assets/icons/galho-seco.jpeg" class="img-project"></a>
+                </div>
+    
+                <div class="slide"  data-aos="fade-top">
+                    <a href="https://todo-g.netlify.app" target="_blank"><img src="assets/icons/todolist.jfif" class="img-project"></a>
+                
+                </div>
+                <div class="slide"  data-aos="fade-top">
+                    <a href="https://g-contador.netlify.app" target="_blank"><img src="assets/icons/contador.jfif" class="img-project"></a>
+                </div>
 
-        <div class="descricao2">
-            <span class="info">i</span>
-            <p>Proposto como desafio no Decola-Tech BootCamp, a página web se comporta como um contador. </p>
+                <div class="img-nav">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                </div>
+            </div>
         </div>
+    
         
         <div class="projects" data-aos="fade-top">
-            <button  id="show-btn">⬇</button>
+            <button  id="show-btn"><i class="fa-solid fa-down-long"></i></button>
         </div>
 
         <div data-aos="fade-right">
@@ -103,13 +116,13 @@
                  utulizando o ThymeLeaf com HTML + CSS, com alguns scripts em Js já pré-configurados. 
              </p>
              <div class="projects" data-aos="fade-top">
-                <button  id="hide-btn">⬆</button>
+                <button  id="hide-btn"><i class="fa-solid fa-up-long"></i></button>
             </div>
             </div>
         </div>
     
-        <h3 class="conteudoDois"> < / Projects > </h3>
     </section>
+    <h3 class="conteudoDois"> < / Projects > </h3>
 
    </main2>
 
@@ -120,11 +133,9 @@
            <div>
                <nav class="botoes">
                    <button class="botao1">HTML5</button>
-                   <button class="botao2">CSS</button>
+                   <button class="botao2">CSS3</button>
                    <button class="botao4">ThymeLeaf</button>
                    <button class="botao6">JavaScript</button>
-                   <button class="botao7">React-native</button>
-                   <button class="botao8">Noção em UX/UI</button>
                    <button class="botao9">GIT</button>
                </nav>
            </div>
@@ -140,7 +151,7 @@
             <button class="botao6">SpringBoot</button>
             <button class="botao7">Spring Security</button>
             <button class="botao8">MYSQL server</button>
-            <button class="botao9">JPA</button>
+            <button class="botao9">GIT</button>
         </nav>
         
     </div>
@@ -161,11 +172,11 @@
        </div>
    </main4>
 
-    <section data-aos="fade-top">
+    <section data-aos="fade-top" class="control-forms">
         <form class="forms" action="https://api.staticforms.xyz/submit" method="post">
 
             <input type="hidden" name="accessKey" value="4440f7f8-d27e-46e7-844c-3c4a98e4513e">
-            <input type="hidden" name="redirectTo" value="file:///C:/Users/Valeria/Desktop/portfolio/index.html?s"> 
+            <input type="hidden" name="redirectTo" value="https://thanku-ladingpage.netlify.app"> 
     
             <h1 class="emailEmoji">📧☕</h1>
             <h3 class="f-h3">Vamos tomar um café e começar um bate-papo.<br>Indicações, dúvidas, feedback, projetos...
@@ -195,11 +206,12 @@
     <footer class="despedida">
         <section class="agradecimentos">
             <nav>
-                <a href="mailto:gustavo99a@hotmail.com" class="mail">Ou entre em contato diretamente: gustavo99a@hotmail.com</a>
+                <a href="mailto:gustavo99a@hotmail.com" class="mail">Prefere entrar em contato diretamente? click in here! <i class="fa-solid fa-address-card"></i></a>
             </nav>
         </section>
     </footer>
     
+    <script src="https://kit.fontawesome.com/e0768889aa.js" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

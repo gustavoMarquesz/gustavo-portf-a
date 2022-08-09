@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Uchen&display=swap');
+
 
 
 *{
@@ -10,7 +12,7 @@
 
 body{
     font-size: 100%;  /*Tamanho da letra */
-    background-image: linear-gradient(90deg, rgba(161,106,104,1) 6%, rgba(68,43,115,1) 67%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(161,106,104,1) 6%, rgba(68,43,115,1) 67%, rgba(9,9,121,1) 100%, hwb(249 41% 12%) 100%);
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -58,13 +60,6 @@ h3{
     border-radius: 40px;
 }
 
-.item2{
-    color: #f8f8f8;  /*A cor da letra */
-}
-
-.item3{
-    color: #f8f8f8;  /*A cor da letra */
-}
 .item4{
     position: relative;
     top: 5px;
@@ -103,6 +98,7 @@ h3{
 }
 .typingAnimation{
     animation: typing 4s 1s normal, blink 2200ms infinite normal;
+
 }
 
 @keyframes typing{
@@ -174,7 +170,6 @@ h3{
     max-width: 300px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
                      fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
     max-height:300px;
-    min-width: 300px;
     border-radius: 50%;
     
 }
@@ -206,7 +201,7 @@ h3{
     width: 700px;
     height: 600px;
     padding: 2%;
-    left: 33%;
+    left: 30%;
     position: relative;
     gap: 15px;
     border-radius: 15px;
@@ -268,24 +263,73 @@ h3{
 
 }
 
-.minhasExperiencias{
-    padding: 5%;
+.projetinhos{
     display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
 }
-.minhasExperiencias :hover{
-    animation-name: botaoAnimation;
-    box-shadow: 0 0 5em rgba(57, 42, 221, 0.5);
-    transition: 1.0s;
+
+.imagesContent{
+    height: 450px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-.img-project{
-    padding: 5%;
-    width: 550px;
-    height: 315px;
-    border-radius: 2%;
+.imagesContent input{
+    display: none;
+}
+
+.imagesContent img{
+    height: 100%;
+    width: 100%;
+}
+
+.img-nav{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: -580px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 35%;
+    transition: 1s;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 1px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -35%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -70%;
 }
 
 #writeProjects{
@@ -576,29 +620,78 @@ button:hover {
     box-shadow: 0 0 25px 30px rgba(57, 42, 221, 0.5);
     transition: 1.0s;
 }
-
 @media screen and (max-width: 375px) {
+    .typingAnimation{
+        animation: typing 4s 1s normal, blink 2200ms infinite normal;
+    }
+    
+    @keyframes typing{
+        from{
+            width:0;;
+        }
+        to{
+            width: 15rem;
+        }
+    }
+    #botao-dark{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        right: 1px;
+    }
+    .redes{
+        max-width: 20px;
+        max-height: 20px;
+        border-radius: 20px;
+    }    
+    .cabecalho-menu{
+        position: fixed;
+        gap: 15px;
+        padding: 20px;
+        left: 300px;
+        transition: 1.5s;
+    }
+    .img-nav{
+        position: absolute;
+        bottom: -680px;
+        left: 50%;
+
+    }
+    .despedida{
+        font-size: 25px;
+        top: 80px;
+        position: relative;
+    }    
+    .control-forms{
+        display: flex;
+        max-width: 200px;
+        padding-right: 355px;
+        position: relative;
+        font-size: 12px;
+    }
+    .imagesContent{
+        height: 250px;
+        width: 370px;
+        border-radius: 20px;
+    }
     .informacoes-eu h1{
-        font-size: 14px;
+        font-size: 20px;
     }
 
-    .informacoes-eu h3{
-        font-size: 14px;
+    .informacoes-eu h4{
+        font-size: 10px;
     }
     .informacoes-eu button{
         width: 12px;
         height: 17px;
     }
     .informacoes img{
-        max-width:50px; 
-        max-height:50px;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
     }
     .informacoes{
         flex-direction: column;
-        font-size: 8px;
-    }
-
-    .cabecalho-menu a{
         font-size: 8px;
     }
     .experiencias p{
@@ -618,13 +711,8 @@ button:hover {
         font-size: 20px;
     }
     .botoes button{
-        width: 120px;
-        height: 17px;
-    }
-
-    .cabecalho-menu button{
-        width: 100px;
-        height: 17px;
+        width: 130px;
+        height: 35px;
     }
     .agradecimentos a{
         font-size: 8px;

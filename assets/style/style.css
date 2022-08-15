@@ -45,8 +45,9 @@ h3{
     font-family: 'Roboto Mono', monospace;  /*google fonts */
     color: #f8f8f8;
     gap: 15px;
+    gap: 15px;
     padding: 20px;
-    left: 1815px;
+    left: 300px;
     transition: 1.5s;
 }
 .cabecalho-menu :hover{
@@ -55,9 +56,9 @@ h3{
 }
 
 .redes{
-    max-width: 30px;
-    max-height: 30px;
-    border-radius: 40px;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 20px;
 }
 
 .item4{
@@ -73,22 +74,27 @@ h3{
 .informacoes{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
 }
-
 .informacoes-eu{
     display: flex;
-    flex-direction: column;
     gap: 25px;
     padding: 40px;
-    
+    font-size: 20px;
+    flex-direction: column;  
+}
+
+.informacoes-eu p{
+    font-size: 12px;
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .infomacaoUm{
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 20px;
     color:#d7d7ea;
     white-space: nowrap;
     overflow: hidden;
@@ -98,7 +104,6 @@ h3{
 }
 .typingAnimation{
     animation: typing 4s 1s normal, blink 2200ms infinite normal;
-
 }
 
 @keyframes typing{
@@ -106,7 +111,7 @@ h3{
         width:0;;
     }
     to{
-        width: 37rem;
+        width: 15rem;
     }
 }
 
@@ -167,9 +172,9 @@ h3{
 }
 .img{
     padding: 5%;
-    max-width: 300px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
+    max-width: 150px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
                      fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
-    max-height:300px;
+    max-height:100px;
     border-radius: 50%;
     
 }
@@ -181,13 +186,16 @@ h3{
     font-family: 'Roboto Mono', monospace;
     color: #f8f8f8; 
     flex-wrap: wrap;
+    font-size: 25px;
+    top: 80px;
+    position: relative;
 }
 
 .agradecimentos{
     display: flex;
     gap:20px;
     padding: 20px;
-    
+    font-size: 10px;    
 }
 
 .forms{
@@ -272,8 +280,8 @@ h3{
 }
 
 .imagesContent{
-    height: 450px;
-    width: 935px;
+    height: 250px;
+    width: 370px;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -291,10 +299,11 @@ h3{
 .img-nav{
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    bottom: -580px;
-    left: 50%;
     transform: translate(-50%);
     display: flex;
+    position: absolute;
+    bottom: -1150px;
+    left: 50%;
 }
 .slides{
     display: flex;
@@ -394,11 +403,11 @@ h3{
 }
 #botao-dark{
     font-family: 'Roboto Mono', monospace;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
     cursor: pointer;
-    right: 5px;
+    right: 1px;
     position: relative;
 }
 .projects{
@@ -554,16 +563,20 @@ h3{
     cursor: pointer;
 }
 .botoes{
-    font-family: 'Roboto Mono', monospace;  /*google fonts */
-    display: flex;  /*FlexBox, intruções de como usar no site */
-    gap: 32px;  /*O espaçamento entre as palavras */
-    color: #f8f8f8;  /*A cor da letra */
+    font-family: 'Roboto Mono', monospace;  
+    display: flex;  
+    gap: 32px;  
+    color: #f8f8f8; 
     font-weight: 400;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: left;
     cursor: pointer;
     
+}
+.botoes button{
+    width: 130px;
+    height: 20px;
 }
 .minhasHabilidadesDois{
     display: flex;
@@ -620,105 +633,11 @@ button:hover {
     box-shadow: 0 0 25px 30px rgba(57, 42, 221, 0.5);
     transition: 1.0s;
 }
-@media screen and (max-width: 375px) {
-    .typingAnimation{
-        animation: typing 4s 1s normal, blink 2200ms infinite normal;
-    }
-    
-    @keyframes typing{
-        from{
-            width:0;;
-        }
-        to{
-            width: 15rem;
-        }
-    }
-    #botao-dark{
-        width: 25px;
-        height: 25px;
-        border-radius: 25px;
-        right: 1px;
-    }
-    .redes{
-        max-width: 20px;
-        max-height: 20px;
-        border-radius: 20px;
-    }    
-    .cabecalho-menu{
-        position: fixed;
-        gap: 15px;
-        padding: 20px;
-        left: 300px;
-        transition: 1.5s;
-    }
-    .img-nav{
-        position: absolute;
-        bottom: -680px;
-        left: 50%;
-
-    }
-    .despedida{
-        font-size: 25px;
-        top: 80px;
-        position: relative;
-    }    
-    .control-forms{
-        display: flex;
-        max-width: 200px;
-        padding-right: 355px;
-        position: relative;
-        font-size: 12px;
-    }
-    .imagesContent{
-        height: 250px;
-        width: 370px;
-        border-radius: 20px;
-    }
-    .informacoes-eu h1{
-        font-size: 20px;
-    }
-
-    .informacoes-eu h4{
-        font-size: 10px;
-    }
-    .informacoes-eu button{
-        width: 12px;
-        height: 17px;
-    }
-    .informacoes img{
-        height: 150px;
-        width: 200px;
-        border-radius: 50%;
-    }
-    .informacoes{
-        flex-direction: column;
-        font-size: 8px;
-    }
-    .experiencias p{
-        font-size: 10px;
-    }
-    .experiencias h2{
-        font-size: 20px;
-    }
-    .minhaHistoria p{
-        font-size: 10px;
-    }
-
-    .minhaHistoria h2{
-        font-size: 20px;
-    }
-    #corpo h2{
-        font-size: 20px;
-    }
-    .botoes button{
-        width: 130px;
-        height: 35px;
-    }
-    .agradecimentos a{
-        font-size: 8px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-       
-    }
+.control-forms{
+    display: flex;
+    max-width: 200px;
+    padding-right: 355px;
+    position: relative;
+    font-size: 12px;
 }
+

@@ -1,0 +1,96 @@
+
+@media screen and (min-width: 1360px) {
+    .cabecalho-menu{
+        display: flex;
+        left: 1250px;
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: row;
+    }
+    .img{
+        min-width: 300px;
+        min-height: 300px;
+    }
+    .informacoes h1 {
+        font-size: 40px;
+    }
+    .informacoes-eu p {
+        font-size: 15px;
+    }
+    @keyframes typing{
+        from{
+            width:0;;
+        }
+        to{
+            width: 30rem;
+        }
+    }
+    .imagesContent{
+        height: 450px;
+        width: 935px;
+        border-radius: 20px;
+    }
+    .img-nav{
+        bottom: -600px;
+    }
+    .control-forms form{
+        display: flex;
+        left: 384px;
+        min-width: 650px;
+        justify-content: center;
+    }
+ 
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho-menu{
+        left: 1300px;
+    }
+    .img-nav{
+        bottom: -400px;
+    }
+    .img{
+        min-width: 300px;
+        min-height: 300px;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .cabecalho-menu{
+        left: 1560px;
+    }
+    .img-nav{
+        bottom: -350px;
+    }
+    .control-forms form{
+        display: flex;
+        left: 484px;
+        min-width: 750px;
+        justify-content: center;
+    }
+    .img{
+        min-width: 300px;
+        min-height: 300px;
+    }  
+}
+
+@media screen and (min-width: 1900px) {
+    .cabecalho-menu{
+        left: 1800px;
+    }
+    .img-nav{
+        bottom: -430px;
+    }
+    .control-forms form{
+        left: 600px;
+        min-width: 750px;
+    }
+    button{
+        min-height: 40px;
+    }
+    .img{
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+}

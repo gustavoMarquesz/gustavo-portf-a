@@ -18,7 +18,9 @@ body{
     width: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(90deg, rgba(161,106,104,1) 36%, rgba(68,43,115,1) 67%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
 }
 h3{
@@ -26,7 +28,10 @@ h3{
     color: #f8f8f8;
     gap: 15px;
     padding: 20px;
-
+}
+h4{
+    display: flex;
+    justify-content: center;
 }
 .dark-mode{
     background: linear-gradient(90deg, rgba(43,41,43,1) 100%, rgba(0,0,0,1) 100%);;
@@ -80,7 +85,7 @@ h3{
 }
 .informacoes-eu{
     display: flex;
-    gap: 25px;
+    gap: 30px;
     padding: 40px;
     font-size: 20px;
     flex-direction: column;  
@@ -172,9 +177,9 @@ h3{
 }
 .img{
     padding: 5%;
-    max-width: 150px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
+    max-width: 230px; /*os valorres auto para o width e height. Assim a escala é feita conforme largura ou altura (o que atingir primeiro) e a proporção é feita automaticamente.
                      fiz isso para reduzir o tamanho da imagem no site, com um valor de 500px no maximo*/
-    max-height:100px;
+    max-height:200px;
     border-radius: 50%;
     
 }
@@ -302,7 +307,7 @@ h3{
     transform: translate(-50%);
     display: flex;
     position: absolute;
-    bottom: -1150px;
+    bottom: -630px;
     left: 50%;
 }
 .slides{

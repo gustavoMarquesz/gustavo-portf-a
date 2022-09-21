@@ -646,3 +646,12 @@ button:hover {
     font-size: 12px;
 }
 
+.seemore{
+    font-size: 20px;
+    color: green;
+}
+
+.old{
+    font-size: 20px;    
+    color: red;
+}
